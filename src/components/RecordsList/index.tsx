@@ -1,9 +1,16 @@
 import React from 'react';
+import SearchComponent from './SearchComponent';
+import ListComponent from './ListComponent';
+import './styles.scss';
 
-function RecordsList () {
+const RecordsList: React.FC = () => {
 	return (
-		<div>
-			Records List
+		<div className="records-list-page">
+			<div className="page-title">
+				Records List
+			</div>
+			<SearchComponent />
+			<ListComponent />
 		</div>
 	)
 }

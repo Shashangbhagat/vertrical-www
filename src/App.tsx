@@ -8,7 +8,7 @@ import RecordDetails from './components/RecordDetails';
 import RecordsList from './components/RecordsList';
 import './App.css';
 
-function App() {
+const App: React.FC = () => {
   return (
     <div className="App">
       <Router>
