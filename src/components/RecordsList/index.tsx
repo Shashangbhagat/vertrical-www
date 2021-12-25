@@ -3,7 +3,7 @@ import React from 'react';
 function RecordsList () {
 	return (
 		<div>
-				Records List
+			Records List
 		</div>
 	)
 }

@@ -4,7 +4,8 @@ import {
   createStore, 
   applyMiddleware, 
   Store, 
-  Dispatch 
+  Dispatch, 
+  AnyAction
 } from "redux"
 import { Provider } from "react-redux";
 import thunk from "redux-thunk";
@@ -12,12 +13,11 @@ import App from './App';
 import reducer from "./redux/reducer";
 import {
   IState,
-  IAction,
 } from './commonTypes';
 import reportWebVitals from './reportWebVitals';
 import './index.css';
 
-const store: Store<IState, IAction> & {
+const store: Store<IState, AnyAction> & {
   dispatch: Dispatch
 } = createStore(reducer, applyMiddleware(thunk))
 

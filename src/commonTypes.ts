@@ -6,10 +6,6 @@ export interface IRecord {
 	shortDescription: string,
 }
 
-export interface IAction {
-	type: string,
-	json?: Array<any> | object,
-}
 
 export interface IState {
 	searchTerm: string,
