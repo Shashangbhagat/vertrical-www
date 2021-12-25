@@ -7,7 +7,13 @@ import * as constants from './constants';
 const initialState: IState = {
 	searchTerm: '',
 	records: [],
-	selectedRecord: {},
+	selectedRecord: {
+		_id: '',
+		title: '',
+		shortDescription: '',
+		description: '',
+		avatar: '',
+	},
 	isLoading: false,
 }
 

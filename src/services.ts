@@ -34,7 +34,7 @@ AnyAction
 > => {
 		return (dispatch: ThunkDispatch<{}, {}, AnyAction>): void => {
 			dispatch(actions.setLoading());
-			axios.get(`${apiUrl}/record/${id}`)
+			axios.get(`${apiUrl}record/${id}`)
 				.then((result: AxiosResponse) => {
 					dispatch(actions.setRecordsDetails(result.data))
 				}).catch(e => {

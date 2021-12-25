@@ -32,7 +32,8 @@ const ListComponent: React.FC = () => {
 		<div className="list-component">
 			<div className="list">
 				{records.map((record: IRecord) => (
-					<ListItemComponent 
+					<ListItemComponent
+						key={record._id}
 						record={record} 
 						handleTitleClick={handleTitleClick}
 					/>

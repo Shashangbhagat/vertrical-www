@@ -10,6 +10,6 @@ export interface IRecord {
 export interface IState {
 	searchTerm: string,
 	records: Array<IRecord>,
-	selectedRecord: IRecord | {},
+	selectedRecord: IRecord,
 	isLoading: boolean,
 }
